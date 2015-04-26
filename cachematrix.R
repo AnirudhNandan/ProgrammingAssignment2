@@ -5,7 +5,7 @@
 ## value of x can be obtained by calling get() method
 ## computed inverse can be stored by calling setinv() method
 ## previously computed inverse can be obtained by calling getinv() method
-## Eg. calling: x <- makeCacheMatrix(x)
+## Eg. calling: x <- makeCacheMatrix(matrixS) where matrixS is some invertible square matrix
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y){
