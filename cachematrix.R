@@ -5,6 +5,7 @@
 ## value of x can be obtained by calling get() method
 ## computed inverse can be stored by calling setinv() method
 ## previously computed inverse can be obtained by calling getinv() method
+## Eg. calling: x <- makeCacheMatrix(x)
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y){
@@ -24,6 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## inverse of the data is computed
 ## the newly computed inverse is placed in cache by setinv() method
 ## the newly computed inverse is returned
+## Eg. calling: cacheSolve(x)
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
         if(!is.null(inv)){
